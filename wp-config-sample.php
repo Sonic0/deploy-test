@@ -26,7 +26,7 @@ define( 'DB_NAME', 'nome_DB' );
 define( 'DB_USER', 'nome_UTENTE' );
 
 /** Password del database */
-define( 'DB_PASSWORD', 'password_qui' );
+define( 'DB_PASSWORD', 'password_HERE' );
 
 /** Hostname del database */
 define( 'DB_HOST', 'localhost' );
