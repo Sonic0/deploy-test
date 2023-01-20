@@ -20,7 +20,7 @@
 
 // ** Impostazioni database - È possibile ottenere queste informazioni dal proprio fornitore di hosting ** //
 /** Il nome del database di WordPress */
-define( 'DB_NAME', 'nome_del_database_qui' );
+define( 'DB_NAME', 'nome_DB' );
 
 /** Nome utente del database */
 define( 'DB_USER', 'nome_utente_qui' );
