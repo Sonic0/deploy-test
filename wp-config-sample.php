@@ -48,7 +48,7 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'Mettere la vostra frase unica qui' );
+define( 'AUTH_KEY',         'Mettere' );
 define( 'SECURE_AUTH_KEY',  'Mettere la vostra frase unica qui' );
 define( 'LOGGED_IN_KEY',    'Mettere la vostra frase unica qui' );
 define( 'NONCE_KEY',        'Mettere la vostra frase unica qui' );
