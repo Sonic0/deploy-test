@@ -2,7 +2,6 @@
 /** Enable W3 Total Cache */
 define('WP_CACHE', true); // Added by W3 Total Cache
 
-
 /**
  * The base configuration for WordPress
  *
@@ -57,15 +56,15 @@ $_SERVER['HTTPS']='on';
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',          'aaaa' );
-define( 'SECURE_AUTH_KEY',   '.sddsfadsd' );
-define( 'LOGGED_IN_KEY',     'bbb' );
-define( 'NONCE_KEY',         'asdf' );
-define( 'AUTH_SALT',         'sadfkjd' );
-define( 'SECURE_AUTH_SALT',  'asfd' );
-define( 'LOGGED_IN_SALT',    'vvbbb' );
-define( 'NONCE_SALT',        'cccc' );
-define( 'WP_CACHE_KEY_SALT', 'dddd' );
+define( 'AUTH_KEY',          '<<auth_key>>' );
+define( 'SECURE_AUTH_KEY',   '<<secure_auth_key>>' );
+define( 'LOGGED_IN_KEY',     '<<logged_in_key>>' );
+define( 'NONCE_KEY',         '<<nonce_key>>' );
+define( 'AUTH_SALT',         '<<auth_salt>>' );
+define( 'SECURE_AUTH_SALT',  '<<secure_auth_salt>>' );
+define( 'LOGGED_IN_SALT',    '<<logged_in_salt>>' );
+define( 'NONCE_SALT',        '<<nonce_salt>>' );
+define( 'WP_CACHE_KEY_SALT', '<<wp_cache_key_salt>>' );
 
 /**#@-*/
 /**
@@ -81,104 +80,58 @@ define('WP_HOME','https://' . $_SERVER['HTTP_HOST']);
 define( 'WP_POST_REVISIONS', true );
 
 /**
-
  * For developers: WordPress debugging mode.
-
  *
-
  * Change this to true to enable the display of notices during development.
-
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
-
  * in their development environments.
-
  *
-
  * For information on other constants that can be used for debugging,
-
  * visit the documentation.
-
  *
-
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
-
  */
-
 if ( isset($_GET['debugM']) && $_GET['mad_debug'] == 'dbgtrue') {
-
     ini_set('error_reporting', E_ALL);
-
     ini_set('display_errors','On');
-
     ini_set('display_startup_errors','On');
-
     //define('xdebug.mode','develop');
-
     define('WP_DEBUG', true);
-
     define( 'WP_DEBUG_LOG', true );
-
     define('SCRIPT_DEBUG', true);
-
 } else {
-
     define( 'WP_DEBUG', false );
-
     define( 'WP_DEBUG_LOG', false );
-
     ini_set('display_errors','Off');
-
     ini_set('display_startup_errors','Off');
-
 }
-
 
 /* Add any custom values between this line and the "stop editing" line. */
 define( 'WP_ALLOW_MULTISITE', true );
-
 define( 'MULTISITE', true );
-
 define( 'SUBDOMAIN_INSTALL', true );
-
 $base = '/';
-
 define( 'DOMAIN_CURRENT_SITE', '<<domain_current_site>>' );
-
 define( 'PATH_CURRENT_SITE', '/' );
-
 define( 'SITE_ID_CURRENT_SITE', 1 );
-
 define( 'BLOG_ID_CURRENT_SITE', 1 );
 
-
 # start: fixes for cookies issues with multiple domains
-
 define( 'COOKIE_DOMAIN', '' );
-
 define( 'ADMIN_COOKIE_PATH', '/' );
-
 define( 'COOKIEPATH', '/' );
-
 define( 'SITECOOKIEPATH', '/' );
-
 # end:   fixes for cookies issues with multiple domains
 
-define( 'NOBLOGREDIRECT', 'https://andreasalvatori.info' );
-
+define( 'NOBLOGREDIRECT', '<<no_blog_redir>>' );
 
 /* That's all, stop editing! Happy publishing. */
 
-
 /** Absolute path to the WordPress directory. */
-
 if ( ! defined( 'ABSPATH' ) ) {
-
 	define( 'ABSPATH', __DIR__ . '/' );
-
 }
 
-
 /** Sets up WordPress vars and included files. */
-
 require_once ABSPATH . 'wp-settings.php';
 
